@@ -1,0 +1,9 @@
+aside {
+
+    background-color: lightgray;
+}
+
+aside > div .first {
+
+    font-family: sans-serif;
+}
