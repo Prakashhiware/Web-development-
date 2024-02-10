@@ -1,0 +1,116 @@
+div.page {
+    background-color: aliceblue;
+}
+
+div.all {
+    border: 2px solid black;
+    height: 40px;
+    width: 40px;
+    align-self: ;
+
+}
+
+div.contain1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid green;
+    height: 500px;
+    width: 500px;
+
+}
+
+div.contain1 > .item2 {
+    position: relative;
+    top: 34px;
+    left: 34px;
+}
+
+div.contain2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid green;
+    height: 500px;
+    width: 500px;
+    position: relative;
+
+}
+
+div.contain2 > .item2 {
+    position: absolute;
+    top: 55px;
+    right: 65px;
+}
+
+div.contain3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid green;
+    height: 500px;
+    width: 500px;
+}
+
+div.contain3 > .item2 {
+    position: fixed;
+    /*    top: 76px;*/
+    bottom: 34px;
+    right: 50px;
+}
+
+div.contain4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid green;
+    height: 500px;
+    width: 500px;
+}
+
+div.contain4 > .item3 {
+    position: sticky;
+    right: 90px;
+    top: 50px;
+}
+
+div.contain6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid green;
+    height: 500px;
+    width: 500px;
+    position: relative;
+}
+
+div.contain6 > .item3 {
+    position: absolute;
+    right: 90px;
+    top: 50px;
+}
+
+div.contain7 {
+    border: dotted green 4px;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    /*    position: absolute;*/
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+div.contain7 > h1 {
+    position: absolute;
+    justify-content: flex-start;
+    /* not working*/
+    align-self: flex-start;
+    top: 67px;
+}
+
+div.contain7 > .item2 {
+    position: relative;
+    bottom: 160px;
+}

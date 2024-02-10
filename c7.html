@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        /*        only parents class can change using flex display property*/
+        div.mother {
+            background-color: chocolate;
+            border: solid green 2px;
+            height: 24px;
+            width: 24px;
+            margin: 12px;
+        }
+
+        /*parent*/
+        div.gr {
+            margin: 5px;
+            height: 200px;
+            padding: 2px;
+            display: flex;
+
+            align-content: flex-start;
+            /*            justify-content: center;*/
+            flex-wrap: wrap;
+            column-gap: 3px;
+
+
+
+            /*            flex-flow: column;*/
+        }
+
+        .order3 {
+            flex-grow: 3;
+            order: 1;
+        }
+
+        .order2 {
+            flex-shrink: 15;
+            order: 2;
+        }
+
+        .order1 {
+            order: 3;
+        }
+
+        /*        default order value is 0*/
+
+    </style>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <header style="color: black;font-family: fantasy">
+        <nav class="bpx">
+            <a href="c.html">home</a>
+            <a href="c1.html">page1</a>
+            <a href="c2.html">page2</a>
+            <a href="c3.html">page3</a>
+            <a href="c4.html">page4</a>
+            <a href="c5.html">page5</a>
+            <a href="c6.html">page6</a>
+            <a href="c7.html">page7</a>
+            <a href="c8.html">page8</a>
+            <a href="c9.html">page9</a>
+            <a href="c10.html">page10</a>
+            <a href="c11.html">page11</a>
+            <a href="c12.html">page12</a>
+            <a href="c13.html">page13</a>
+        </nav>
+    </header>
+    <script src=""></script>
+    <main>
+        <h1 style="text-align: center;color: salmon;text-transform: uppercase; font-style: italic; font-family: fantasy;
+        font-weight: 500;text-decoration-color: aqua; text-decoration:double underline">this is flex models</h1>
+    </main>
+    <div class="gr" style="background-color: mediumpurple;">
+        <div class="mother order1">1</div>
+        <div class="mother order2">2</div>
+        <div class="mother order3">3</div>
+        <div class="mother">4</div>
+        <div class="mother">5</div>
+        <div class="mother">6</div>
+
+
+        <div class="mother">6</div>
+    </div>
+</body>
+
+</html>

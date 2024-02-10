@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query and resolution</title>
+    <style type="text/css">
+        div.all {
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            align-self: ;
+
+        }
+
+        p:nth-child(2) {
+            color: rgb(255, 200, 5);
+            clear: both;
+            background-color: dodgerblue;
+        }
+
+        div.box1 {
+            height: 400px;
+            width: 400px;
+            background-color: darkcyan;
+        }
+
+        @media (min-width:500px) {
+            div.box1 {
+                color: aliceblue;
+                background-color: blueviolet;
+            }
+        }
+
+        div.box2 {
+
+            height: 400px;
+            width: 400px;
+            background-color: lightblue;
+        }
+
+        @media (max-width:500px) {
+            div.box2 {
+                color: aliceblue;
+                background-color: lime;
+            }
+        }
+
+        div.box3 {
+
+            height: 400px;
+            width: 400px;
+            background-color: salmon;
+        }
+
+        @media (min-width:490px) and (max-width:500px) {
+            div.box3 {
+                color: yellow;
+                background-color: hotpink;
+            }
+        }
+
+        div.contain1 {
+            display: flex;
+            border: 3px solid green;
+        }
+
+        @media (max-width:600px) {
+            div.contain1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                box-sizing: border-box;
+            }
+        }
+
+        @media (min-width:600px) {
+            div.contain1 {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+
+        div.contain2 {
+            border: 3px solid red;
+        }
+
+    </style>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <script src=""></script>
+    <nav class="bpx">
+        <a href="c.html">home</a>
+        <a href="c1.html">page1</a>
+        <a href="c2.html">page2</a>
+        <a href="c3.html">page3</a>
+        <a href="c4.html">page4</a>
+        <a href="c5.html">page5</a>
+        <a href="c6.html">page6</a>
+        <a href="c7.html">page7</a>
+        <a href="c8.html">page8</a>
+        <a href="c9.html">page9</a>
+        <a href="c10.html">page10</a>
+        <a href="c11.html">page11</a>
+        <a href="c12.html">page12</a>
+        <a href="c13.html">page13</a>
+    </nav>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, consequuntur?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, optio?</p>
+
+
+    </div>
+
+    <div class="box1">
+        Hello media query for minimum
+    </div>
+
+    <div class="box2">
+        Hello media query for maximum
+    </div>
+    <div class="box3">
+        Hello media query for maximum and minimum both
+    </div>
+    <div class="contain1">
+        <h1>absolute</h1>
+        <div class="item1 all" style="background-color: #642463"></div>
+        <div class="item2 all" style="background-color: #643637"></div>
+        <div class="item3 all" style="background-color: #064735"></div>
+        <div class="item4 all" style="background-color: #728472"></div>
+    </div>
+    <div class="contain2">
+        <h1>fixed</h1>
+        <div class="item1 all" style="background-color: #642463"></div>
+        <div class="item2 all" style="background-color: #643637"></div>
+        <div class="item3 all" style="background-color: #064735"></div>
+        <div class="item4 all" style="background-color: #728472"></div>
+    </div>
+
+</body>
+
+</html>

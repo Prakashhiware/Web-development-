@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline internal exteranl and selector</title>
+
+    <link rel="stylesheet" href="">
+    <style>
+        * {
+            margin: 10px;
+            padding: 10px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: aliceblue;
+            font-family: comic sans ms;
+        }
+
+        /*        unvisted link*/
+
+        a:link {
+            color: brown;
+        }
+
+        /*        visted link*/
+
+        a:visited {
+            color: orangered;
+        }
+
+        /*        mouse check*/
+        a:active {
+            color: darkcyan;
+        }
+
+        /*        mouse pointer in */
+        a:hover {
+
+
+            background-color: lightcyan;
+        }
+
+
+        }
+
+        nav.bpx {
+            border: solid blue 10px;
+            background-color: greenyellow;
+
+        }
+
+        nav.bpx {
+            border: solid blue 10px;
+            background-color: lightgray;
+
+        }
+
+        footer nav.bpx {
+            background-color: lavenderblush;
+        }
+
+        .board {
+            border-style: dotted crimson 3px, ;
+            background-attachment: fixed;
+            background-size: contain;
+            background-origin: border-box;
+            /*            background-image: url("bg2.png"), linear-gradient(45deg, red, green);*/
+        }
+
+        input:focus {}
+
+    </style>
+</head>
+
+<body>
+    <script src=""></script>
+    <header>
+        <header style="color: black;font-family: fantasy">
+            <nav class="bpx">
+                <a href="c.html">home</a>
+                <a href="c1.html">page1</a>
+                <a href="c2.html">page2</a>
+                <a href="c3.html">page3</a>
+                <a href="c4.html">page4</a>
+                <a href="c5.html">page5</a>
+                <a href="c6.html">page6</a>
+                <a href="c7.html">page7</a>
+                <a href="c8.html">page8</a>
+                <a href="c9.html">page9</a>
+                <a href="c10.html">page10</a>
+                <a href="c11.html">page11</a>
+                <a href="c12.html">page12</a>
+                <a href="c13.html">page13</a>
+            </nav>
+        </header>
+        <article>
+            <p class="paralell">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum repellendus fugiat ipsa iste eligendi, adipisci iure sequi odit dicta numquam recusandae cumque tempore nemo a. Deleniti, qui soluta aliquid.</p>
+            <p class="paralell" style="color: red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum repellendus fugiat ipsa iste eligendi, adipisci iure sequi odit dicta numquam recusandae cumque tempore nemo a. Deleniti, qui soluta aliquid.</p>
+            <p class="paralell">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum repellendus fugiat ipsa iste eligendi, adipisci iure sequi odit dicta numquam recusandae cumque tempore nemo a. Deleniti, qui soluta aliquid.</p>
+            <p class="paralell" id="disk"><strong style="color: brown">This is id selection </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum repellendus fugiat ipsa iste eligendi, adipisci iure sequi odit dicta numquam recusandae cumque tempore nemo a. Deleniti, qui soluta aliquid.</p>
+            <div>
+                <form action="post">
+                    <fieldset><label for="mail">Entered Email</label>
+                        <input type="email" name="Gmail" required id="mail" placeholder="user email id"><br>
+                        <label for="pass">Enter Passwords</label><br>
+                        <input type="password" placholder="user password" required>
+                        <input type="submit" value="Subscribe">
+
+                    </fieldset>
+
+                </form>
+            </div>
+            <div class="board">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem minima maiores ratione totam rerum sequi corrupti, eveniet ab dolor doloribus eaque sit, molestiae quasi, explicabo quod qui dolores assumenda delectus asperiores optio maxime! Nobis, incidunt!</p>
+            </div>
+        </article>
+</body>
+<footer>
+    <div>
+        <h4>contact us</h4>
+        <a href=" telt:+74674685365">call us</a>
+        <a href="mailto:someone@gmail.com">Email</a>
+
+    </div>
+
+    <nav class="bpx">&#169; copyright right reserve 2024</nav>
+</footer>
+
+</html>

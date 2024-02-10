@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+    <style type="text/css">
+        * {
+            margin: 10px;
+            padding: 2px;
+
+        }
+
+        body {
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("media/images%20(1).jpeg");
+        }
+
+        /*first box data*/
+        div.sq {
+            background-color: orange;
+        }
+
+        span.sp {
+            display: block;
+            margin: 13px;
+            padding: 3px;
+            background-attachment: fixed;
+            border: solid green 2px;
+            background-color: blueviolet;
+        }
+
+        /*        second box data*/
+        #myid {
+            color: blue;
+            background-color: lavenderblush;
+            border: solid black 3px;
+        }
+
+        #myid>p.boxout {
+
+            background-color: hotpink;
+            border: solid yellow 5px;
+            padding: 9px;
+
+        }
+
+        #myid>p>span.boxin {
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            margin: 12px;
+            padding: 5px;
+            border: solid green 3px;
+            background-color: navajowhite;
+        }
+
+        /*        third box data*/
+        .size {
+            background-color: palegreen;
+            margin: 2px;
+            padding: 3px;
+        }
+
+        p.bord1 {
+            background-color: cadetblue;
+            border: solid green 34px;
+            margin: 60px;
+            padding: 60px;
+            height: 200px;
+            width: 300px;
+        }
+
+        p.bord2 {
+            box-sizing: border-box;
+            background-color: coral;
+            border: solid green 34px;
+            margin: 60px;
+            padding: 60px;
+            height: 200px;
+            width: 300px;
+
+        }
+
+    </style>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <div>
+        <header style="color: black;font-family: fantasy">
+            <nav class="bpx">
+                <a href="c.html">home</a>
+                <a href="c1.html">page1</a>
+                <a href="c2.html">page2</a>
+                <a href="c3.html">page3</a>
+                <a href="c4.html">page4</a>
+                <a href="c5.html">page5</a>
+                <a href="c6.html">page6</a>
+                <a href="c7.html">page7</a>
+                <a href="c8.html">page8</a>
+                <a href="c9.html">page9</a>
+                <a href="c10.html">page10</a>
+                <a href="c11.html">page11</a>
+                <a href="c12.html">page12</a>
+                <a href="c13.html">page13</a>
+            </nav>
+        </header>
+    </div>
+    <div class="sq">
+        <h3>inline element</h3>
+        <span class="sp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ad repudiandae veritatis, est dolorem laudantium possimus facere itaque odio dignissimos obcaecati fuga eos nostrum qui alias omnis ipsum ex debitis.</span>
+        <span class="sp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ad repudiandae veritatis, est dolorem laudantium possimus facere itaque odio dignissimos obcaecati fuga eos nostrum qui alias omnis ipsum ex debitis.</span>
+        <span class="sp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ad repudiandae veritatis, est dolorem laudantium possimus facere itaque odio dignissimos obcaecati fuga eos nostrum qui alias omnis ipsum ex debitis.</span>
+        <span class="sp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ad repudiandae veritatis, est dolorem laudantium possimus facere itaque odio dignissimos obcaecati fuga eos nostrum qui alias omnis ipsum ex debitis.</span>
+
+    </div>
+    <div id="myid">
+        <h3 style="text-align: center;font-weight: 400;">THIS IS DISPLAY PROPERTY</h3>
+        <p class="boxout">
+            <span class="boxin">first span</span>
+            <span class="boxin">second span</span>
+            <span class="boxin">third span</span>
+        </p>
+        <p class="boxout">
+            <span class="boxin">1second span</span>
+            <span class="boxin">3 third span</span>
+            <span class="boxin">1first span</span>
+        </p>
+
+    </div>
+    <div class="size">
+        <h3 style="text-transform: uppercase">borderbox</h3>
+        <p class="bord1"> This is first with border box save space mean size </p>
+        <p class="bord2">This is second without border box no size handling</p>
+    </div>
+    <script src=""></script>
+</body>
+
+</html>
