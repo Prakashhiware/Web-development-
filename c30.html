@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github logs</title>
+    <style>
+        :root {
+            --theme1: rgb(0, 0, 0);
+        }
+
+        * {
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: rgb(153, 212, 216);
+        }
+
+        nav {
+            position: relative;
+        }
+
+        .myul {
+            height: 20px;
+            font-size: 15px;
+            padding: 10px 30px;
+            border-radius: 13px;
+            display: flex;
+            gap: 15px;
+            justify-content: end;
+            align-items: center;
+            background-color: rgb(210, 255, 255);
+        }
+
+        .myul>li {
+
+            list-style: none;
+        }
+
+        .myul>li>a {
+            text-decoration: none;
+            color: var(--theme1);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            bsolidorder: 3px;
+            margin: 0px 10px;
+            gap: 30px;
+        }
+
+        .items {
+
+            height: 100px;
+            background: white;
+            border: 2px solid;
+        }
+
+
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 500px;
+            width: auto;
+        }
+
+        .foot {
+            display: flex;
+
+            background: rebeccapurple;
+        }
+
+        .circle {
+
+            /* top: 10px; */
+            right: 10px;
+            bottom: 20px;
+            display: flex;
+            position: fixed;
+
+        }
+
+        .circle>figure>img {
+
+            border-radius: 30px;
+            height: 60px;
+            width: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="myul">
+                <li>Home</li>
+                <li>Products</li>
+                <li><a href="c2.html">Download</a></li>
+                <li>About us</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="items"><img src="" alt=""></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+        </div>
+        <p>Computer engineering is defined as the discipline that embodies the science and technology of design, construction, implementation, and maintenance of software and hardware components of modern computing systems and computer-controlled equipment.</p>
+        <div class="circle">
+            <figure><img src="download.jpg" alt="">
+                <figcaption>devloper
+                    <br> Prakash
+                </figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <div class="foot">Copyright &copy; all right reserved</div>
+    </footer>
+</body>
+
+</html>
