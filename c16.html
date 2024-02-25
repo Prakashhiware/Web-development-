@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation part2</title>
+    <style>
+        :root {
+            color: white;
+            --hw: 50px;
+        }
+
+        body {
+            background-color: aliceblue;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        div.sub {
+            height: var(--hw);
+            width: var(--hw);
+            background-color: aqua;
+            border-width: 4px;
+            border-color: hsl(242, 40%, 70%);
+            border-style: solid;
+            margin: 20px 20px;
+
+        }
+
+        div.contain {
+            display: flex;
+            column-gap: 10px;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        div.box1 {
+            position: relative;
+            background-color: red;
+            animation-name: BOX1;
+            animation-delay: 3s;
+            animation-duration: 7s;
+            animation-iteration-count: 2;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes BOX1 {
+            0% {
+                background-color: aquamarine;
+                left: 0px;
+            }
+
+            100% {
+                background-color: black;
+                left: 400px;
+            }
+        }
+
+        div.box2 {
+            position: relative;
+            background-color: red;
+            animation-name: BOX2;
+            animation-delay: 3s;
+            animation-duration: 7s;
+            animation-iteration-count: 2;
+            /*
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+*/
+            font-size: 12px;
+            animation-fill-mode: backwards;
+        }
+
+        @keyframes BOX2 {
+            0% {
+                background-color: aquamarine;
+                left: 0px;
+            }
+
+            100% {
+                background-color: black;
+                left: 400px;
+            }
+        }
+
+        div.box3 {
+            position: relative;
+            background-color: red;
+            animation-name: BOX3;
+            animation-delay: 3s;
+            animation-duration: 7s;
+            animation-iteration-count: 2;
+            animation-fill-mode: none;
+        }
+
+        @keyframes BOX3 {
+            0% {
+                background-color: aquamarine;
+                left: 0px;
+            }
+
+            100% {
+                background-color: black;
+                left: 400px;
+            }
+        }
+
+        div.box4 {
+            position: relative;
+            background-color: red;
+            animation-name: BOX4;
+            animation-delay: 3s;
+            animation-duration: 7s;
+            animation-iteration-count: 2;
+            animation-fill-mode: both;
+        }
+
+        @keyframes BOX4 {
+            0% {
+                background-color: aquamarine;
+                left: 0px;
+            }
+
+            100% {
+                background-color: black;
+                left: 400px;
+            }
+        }
+
+
+        div.box6 {
+            position: relative;
+            background-color: red;
+            animation-name: BOX6;
+            animation-delay: 3s;
+            animation-duration: 7s;
+            animation-iteration-count: 2;
+            animation-direction: reverse;
+        }
+
+        @keyframes BOX6 {
+            0% {
+                background-color: aquamarine;
+                left: 0px;
+            }
+
+            100% {
+                background-color: black;
+                left: 400px;
+            }
+        }
+
+        div.box5 {
+            position: relative;
+            background-color: red;
+            animation-name: BOX5;
+            animation-delay: 3s;
+            animation-duration: 7s;
+            animation-iteration-count: 2;
+            animation-timing-function: cubic-bezier(0, 1.73, 0.35, -0.13);
+        }
+
+        @keyframes BOX5 {
+            0% {
+                background-color: aquamarine;
+                left: 0px;
+            }
+
+            100% {
+                background-color: black;
+                left: 400px;
+            }
+        }
+
+    </style>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <script src=""></script>
+    <nav class="bpx">
+        <a href="c.html">home</a>
+        <a href="c1.html">page1</a>
+        <a href="c2.html">page2</a>
+        <a href="c3.html">page3</a>
+        <a href="c4.html">page4</a>
+        <a href="c5.html">page5</a>
+        <a href="c6.html">page6</a>
+        <a href="c7.html">page7</a>
+        <a href="c8.html">page8</a>
+        <a href="c9.html">page9</a>
+        <a href="c10.html">page10</a>
+        <a href="c11.html">page11</a>
+        <a href="c12.html">page12</a>
+        <a href="c13.html">page13</a>
+        <a href="c14.html">page14</a>
+        <a href="c15.html">page15</a>
+        <a href="c16.html">page16</a>
+        <a href="c17.html">page17</a>
+        <a href="c18.html">page18</a>
+        <a href="c19.html">page19</a>
+        <a href="c20.html">page20</a>
+        <a href="c21.html">page21</a>
+        <a href="c22.html">page22</a>
+        <a href="c23.html">page23</a>
+        <a href="c24.html">page24</a>
+        <a href="c25.html">page25</a>
+        <a href="c26.html">page26</a>
+    </nav>
+
+    <div class="contain">
+        <h1>animation in css part 2</h1>
+
+        <div class="sub box1">forwords</div>
+        <div class="sub box2">backwords</div>
+        <div class="sub box3">none</div>
+        <div class="sub box4">both</div>
+        <div class="sub box5">timing</div>
+        <div class="sub box6">direction</div>
+        <div class="sub box7"></div>
+        <div class=" sub box8"></div>
+        <div class=" sub box9"></div>
+        <div class=" sub box10"></div>
+        <div class=" sub box11"></div>
+        <div class=" sub box12"></div>
+        <div class=" sub box13"></div>
+        <div class=" sub box14"></div>
+        <div class="sub box15"></div>
+        <div class="sub box16"></div>
+        <div class="sub box17"></div>
+        <div class="sub box18"></div>
+        <div class="sub box19"></div>
+        <div class="sub box20"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style>
+        :root {
+            --box: 2px solid grey;
+        }
+
+
+        nav.navigation>ul {
+            display: flex;
+            position: relative;
+            list-style: none;
+            margin-left: 0px;
+            padding-left: 0px;
+            border: 2px solid black;
+            list-style-position: inside;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            font-family: arial, ;
+            width: 200px;
+            height: 28px;
+            background-color: aqua;
+            overflow: hidden;
+            animation-name: navi;
+            animation-duration: 3s;
+            animation-play-state: paused;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+
+
+
+        }
+
+        nav.navigation>ul:hover {
+
+            animation-play-state: running;
+        }
+
+        @keyframes navi {
+            0% {
+                width: 200px;
+                height: 28px;
+            }
+
+            100% {
+                height: 195px;
+                width: ;
+            }
+        }
+
+        a {
+            color: rebeccapurple;
+            font-weight: 600;
+            text-decoration: none;
+            transition-duration: 1s;
+            transition-property: all;
+        }
+
+        a:hover {
+            background-color: #b0ffff;
+        }
+
+        nav.navigation>ul>li {
+            margin: 3px;
+            border: 2px solid #00a8c3;
+            border-radius: 3px;
+
+        }
+
+        div.contain {
+
+            height: 450px;
+            width: 350px;
+
+            border-radius: 5px;
+            background-color: gainsboro;
+            border: 2px solid black;
+
+        }
+
+        div.contain2 {
+            margin: 10px 30px 10px;
+            height: 400px;
+            width: 270px;
+            border-radius: 5px;
+            background-color: aliceblue;
+            border: 2px solid grey;
+            display: flex;
+            position: relative;
+
+        }
+
+        div.photo>nav {
+            position: absolute;
+            top: 70px;
+            left: 70px;
+            /*
+            justify-items: center;
+            align-items: center;*/
+
+        }
+
+        div>img {
+            position: absolute;
+            justify-content: center;
+            border-radius: 5px;
+            margin: 7px;
+            padding: ;
+            width: 250px;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+            /*            height: 0px;*/
+            /*            border: 2px solid grey;*/
+        }
+
+        div>img:hover {
+            opacity: 0%;
+
+        }
+
+        div.capsule {
+            position: absolute;
+
+            top: 190px;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        div.capsule>span {
+            border: 2px solid grey;
+            margin: 4px;
+            border-radius: 4px;
+            font-size: 12px;
+
+        }
+
+        div.content {
+            position: absolute;
+            top: 200px;
+
+            /*            border: var(--box);*/
+            font-size: 13px;
+            font-family: arial;
+            padding: 0px 15px 0px;
+
+            margin: 0px;
+        }
+
+        div.content>p {
+
+            /*            border: 2px solid grey;*/
+            color: grey;
+        }
+
+    </style>
+</head>
+
+<body>
+    <script src=""></script>
+    <nav class="navigation">
+        <ul>
+            <li><a href="c.html">home</a></li>
+            <li><a href="c1.html">page1</a></li>
+            <li><a href="c2.html">page2</a></li>
+            <li><a href="c3.html">page3</a></li>
+            <li><a href="c4.html">page4</a></li>
+            <li><a href="c5.html">page5</a></li>
+            <li><a href="c6.html">page6</a></li>
+            <li><a href="c7.html">page7</a></li>
+            <li><a href="c8.html">page8</a></li>
+            <li><a href="c9.html">page9</a></li>
+            <li><a href="c10.html">page10</a></li>
+            <li><a href="c11.html">page11</a></li>
+            <li><a href="c12.html">page12</a></li>
+            <li><a href="c13.html">page13</a></li>
+            <li><a href="c14.html">page14</a></li>
+            <li><a href="c15.html">page15</a></li>
+            <li><a href="c16.html">page16</a></li>
+            <li><a href="c17.html">page17</a></li>
+            <li><a href="c18.html">page17</a></li>
+            <li><a href="c19.html">page18</a></li>
+            <li><a href="c20.html">page19</a></li>
+            <li><a href="c21.html">page20</a></li>
+            <li><a href="c22.html">page21</a></li>
+            <li><a href="c.html">page22</a></li>
+            <li><a href="c23.html">page23</a></li>
+            <li><a href="c24.html">page24</a></li>
+            <li><a href="c25.html">page25</a></li>
+            <li><a href="c26.html">page26</a></li>
+        </ul>
+    </nav>
+    <div class="contain">
+        <div class="contain2">
+            <div class="photo">
+                <nav>Program by Prakash</nav>
+                <img src="media/images%20(10).jpeg" alt="">
+            </div>
+            <div class="capsule">
+                <span>Nature</span><span>Lake</span>
+            </div>
+            <div class="content">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus illo ex, facere quia fuga itaque iure quam omnis ipsam, magni maxime, et cupiditate sunt, non expedita corporis ipsa. Alias voluptates impedit tempora possimus sequi aliquam quos autem esse, nostrum animi dolorem nulla aspernatur.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

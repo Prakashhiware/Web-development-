@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animaation of bounce ball in transition</title>
+    <style>
+        .contain {
+
+            background-color: #fcabab;
+            height: 60vh;
+            width: auto;
+            display: flex;
+            align-items: end;
+        }
+
+        .ball {
+            display: flex;
+            /* text-align: center; */
+            justify-content: center;
+            align-items: center;
+            padding: 4px;
+            border: 3px solid #ffc400;
+            background-color: #d0ff00;
+            height: 50px;
+            border-radius: 50px;
+            width: 50px;
+            transition-duration: 5s;
+            transition-delay: 1s;
+            transition-property: all;
+            transition-timing-function:none;
+        }
+        .ball:hover{
+            /* only transform  use not top left work */
+            transform: translateY(-150px) translateX(200px) ; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contain">
+
+        <div class="ball">
+            1
+        </div>
+    </div>
+</body>
+
+</html>

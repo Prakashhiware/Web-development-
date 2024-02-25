@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 5 solution</title>
+    <style>
+        .myheader{
+
+            position: sticky;
+            top: 0px; 
+        }
+        nav{
+            height: 2em;
+        background-color: #d47e7e;
+    }
+main{
+    background-color: black;
+    padding:  20px;
+}
+        .contain {
+            padding: 10px;
+            background-color: rgb(219, 189, 152);
+            text-align: center;
+        }
+
+        .item {
+        
+            margin: 0px 8px;
+            display: inline-block;
+            border: 2px solid black;
+            height: 20vh;
+            width: 45%;
+            background-color: rgb(223, 223, 151);
+        }
+
+.boxmain{
+    display: flex;
+    justify-content: center;
+}
+.box3{
+    border-radius: 10px;
+    /* border: 3px solid red; */
+    padding: 10px 10px;
+    background-color: grey;
+    width: 50vw;
+}
+        .myfooter {
+            display: flex;
+            align-items: flex-end;
+            /* Align items to the bottom */
+            justify-content: center;
+            /* Center items horizontally */
+            height: 100px;
+            /* Set a fixed height for the footer */
+            background-color: #f0f0f0;
+        }
+        .circle{
+            padding: 13px 13px;
+            height: 20px;
+            width: 20px;
+            background-color: orange;
+            border-radius: 23px;
+            position: fixed;
+            bottom: 10px;
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="myheader">
+        <nav></nav>
+    </header>
+    <main>
+        <div class="contain">
+            <div class="item">1</div>
+            <div class="item">2</div>
+        </div>
+        <div class="boxmain"><p class="box3">wellcome to our website</p> </div>
+    <div class="circle">
+        Chatbox
+    </div>
+    </main>
+    <footer class="myfooter">
+        Copyright &copy; all right reserve
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animaation of bounce ball</title>
+    <style>
+        .contain {
+            display: flex;
+            position: relative;
+            background-color: #fcabab;
+            height: 60vh;
+            width: auto;
+
+        }
+
+        .ball {
+            display: flex;
+            position: absolute;
+            background-color: #d0ff00;
+            height: 50px;
+            border-radius: 50px;
+            width: 50px;
+            animation: movingy 1s infinite alternate ease-in-out,movingx 10s linear infinite;
+            animation: 
+        }
+
+        @keyframes movingy {
+            0% {
+                bottom: 0px;
+            }
+    /* 25%{
+bottom: 70%;
+    } */
+    50%{
+        bottom: 70%;
+    }
+    /* 75%{
+        bottom: 70%;
+    } */
+    100%{
+        bottom: 0%;
+    }
+
+        }
+
+        @keyframes movingx {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contain">
+
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> outline and specificity and list item and variable</title>
+    <style>
+        :root {
+            --myradius: 10px;
+        }
+
+        .contain {
+            height: 100vh;
+            width: 100vw;
+            background-color: #a34b63;
+        }
+
+        p {
+            outline-color: aquamarine;
+            outline-offset: ;
+            outline-style: double;
+            outline-width: 4px;
+        }
+
+        [data-x=a] {
+            color: forestgreen;
+        }
+
+        p {
+            border: solid yellow 6px;
+            padding: 50px;
+            margin: var(--myradius);
+            border-radius: 30px;
+        }
+
+        .ulc {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: var(--myradius, 15);
+            border-radius: var(--myradius);
+            list-style: none;
+            width: 200px;
+            background-color: dodgerblue;
+            margin: 14px;
+            box-sizing: border-box;
+
+
+        }
+
+        li:hover {
+            background-color: rgb(0, 101, 209);
+            font-weight: 900;
+            font-size: 17px;
+
+
+        }
+
+        .olc {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            list-style-position: inside;
+            width: 100px;
+            background-color: royalblue;
+            /*            list-style: lower-roman;*/
+
+            list-style-image: url();
+
+
+
+            list-style-position: inside;
+            margin: 4px;
+        }
+
+    </style>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <script src=""></script>mation
+    <nav class="bpx">
+        <a href="c.html">home</a>
+        <a href="c1.html">page1</a>
+        <a href="c2.html">page2</a>
+        <a href="c3.html">page3</a>
+        <a href="c4.html">page4</a>
+        <a href="c5.html">page5</a>
+        <a href="c6.html">page6</a>
+        <a href="c7.html">page7</a>
+        <a href="c8.html">page8</a>
+        <a href="c9.html">page9</a>
+        <a href="c10.html">page10</a>
+        <a href="c11.html">page11</a>
+        <a href="c12.html">page12</a>
+        <a href="c13.html">page13</a>
+        <a href="c14.html">page14</a>
+        <a href="c15.html">page15</a>
+        <a href="c16.html">page16</a>
+        <a href="c17.html">page17</a>
+        <a href="c18.html">page18</a>
+        <a href="c19.html">page19</a>
+        <a href="c20.html">page20</a>
+        <a href="c21.html">page21</a>
+        <a href="c22.html">page22</a>
+        <a href="c23.html">page23</a>
+        <a href="c24.html">page24</a>
+        <a href="c25.html">page25</a>
+        <a href="c26.html">page26</a>
+    </nav>
+    <div class="contain">
+        <h2> outline and specificity and list item</h2>
+        <!--atribute selector-->
+        <p data-x=a>hello Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, perferendis repellat aliquam eos distinctio dolore quisquam aspernatur dolorem, eaque laboriosam autem voluptatem optio dicta, nostrum at? Provident, porro hic perspiciatis eos ratione rerum! Aut!</p>
+        <nav>
+            <ul class="ulc" type="circle">
+                <li>first</li>
+                <li>Second</li>
+                <li>Third</li>
+                <li>Fourth</li>
+            </ul>
+            <ol class="olc">
+                <li>
+                    home
+                </li>
+                <li>about</li>
+                <li>information</li>
+                <li>contact</li>
+                <li>copyright</li>
+            </ol>
+        </nav>
+    </div>
+</body>
+
+</html>

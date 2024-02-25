@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card exercise</title>
+    <style>
+        div.mycard {
+            background-color: aliceblue;
+            border: 4px solid black;
+            outline: 2px double red;
+            height: 550px;
+            width: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        @media only screen and (min-width:500px) and (orientation:landscape) {
+            div.inside {
+                background-color: pink;
+                border-radius: 10px;
+                border: 3px solid yellow;
+                margin: 20px;
+                height: 500px;
+                width: 700px;
+
+            }
+        }
+
+        @media (max-width:500px) {
+
+            div.inside {
+
+                background-color: white;
+                border-radius: 10px;
+                border: 3px solid grey;
+                margin: 20px;
+                height: 500px;
+                width: 350px;
+
+
+                /*            align-content: center;*/
+
+
+            }
+        }
+
+
+
+        p {
+            color: darkgrey;
+        }
+
+        button {
+            position: relative;
+            left: 120px;
+            border-radius: 6px;
+            color: #99cbff;
+            background-color: #006ff9;
+        }
+
+        img {
+            margin-left: -30px;
+            border-radius: 10px;
+        }
+
+        div.capsule>span {
+            border: solid black 3px;
+        }
+
+    </style>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <script src=""></script>
+    <nav class="bpx">
+        <a href="c.html">home</a>
+        <a href="c1.html">page1</a>
+        <a href="c2.html">page2</a>
+        <a href="c3.html">page3</a>
+        <a href="c4.html">page4</a>
+        <a href="c5.html">page5</a>
+        <a href="c6.html">page6</a>
+        <a href="c7.html">page7</a>
+        <a href="c8.html">page8</a>
+        <a href="c9.html">page9</a>
+        <a href="c10.html">page10</a>
+        <a href="c11.html">page11</a>
+        <a href="c12.html">page12</a>
+        <a href="c13.html">page13</a>
+        <a href="c14.html">page14</a>
+        <a href="c15.html">page15</a>
+        <a href="c16.html">page16</a>
+        <a href="c17.html">page17</a>
+        <a href="c18.html">page18</a>
+        <a href="c19.html">page19</a>
+        <a href="c20.html">page20</a>
+        <a href="c21.html">page21</a>
+        <a href="c22.html">page22</a>
+        <a href="c23.html">page23</a>
+        <a href="c24.html">page24</a>
+        <a href="c25.html">page25</a>
+        <a href="c26.html">page26</a>
+    </nav>
+
+    <div class="mycard">
+        <div class="inside">
+            <figure><img src="media/images%20(1).jpeg" alt="my img" height="auto" width="auto"></figure>
+            <div class="capsule">
+                <span>nature</span>lake<span></span>
+            </div>
+            <div id="para">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit itaque nesciunt recusandae esse nobis unde, qui, soluta explicabo porro voluptate quasi deleniti quaerat. Eos ipsam, voluptatum atque veritatis. Repellendus itaque magnam voluptatum, maiores earum reiciendis ullam nemo accusantium vero consectetur sunt asperiores, velit! delectus quia provident molestias, facilis natus rem voluptates.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -4,7 +4,83 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>animation part2</title>
+    <style>
+        :root {
+            --hw: 50px;
+        }
+
+        div.contain {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+            background-color: azure;
+        }
+
+        div.box1 {
+            height: var(--hw);
+            width: var(--hw);
+            background-color: aqua;
+            border: 2px solid black;
+            animation-name: pehla;
+            position: relative;
+            animation-duration: 4s;
+            animation-iteration-count: 4;
+            animation-delay: 6s;
+            animation-timing-function: ease;
+        }
+
+        @keyframes pehla {
+            from {
+                top: 0px;
+                left: 0px;
+            }
+
+            to {
+                background-color: rebeccapurple;
+                top: 0px;
+                left: 500px;
+            }
+        }
+
+
+        div.box2 {
+            height: var(--hw);
+            width: var(--hw);
+            background-color: aqua;
+            border: 2px solid black;
+            animation-name: pehla;
+            position: relative;
+            animation-duration: 4s;
+            animation-timing-function: cubic-bezier(0, 0.83, 1, -0.2);
+        }
+
+        div.box3 {
+            height: var(--hw);
+            width: var(--hw);
+            background-color: aqua;
+            border: 2px solid black;
+            animation-name: pehla;
+            position: relative;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+        }
+
+        div.box4 {
+            height: var(--hw);
+            width: var(--hw);
+            background-color: aqua;
+            border: 2px solid black;
+            animation-name: pehla;
+            position: relative;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-timing-function: steps(3, start);
+
+        }
+
+    </style>
     <link rel="stylesheet" href="">
 </head>
 
@@ -40,7 +116,30 @@
         <a href="c26.html">page26</a>
     </nav>
 
-    <div class="contain"></div>
+    <div class="contain">
+        <h1>animation in css part 2</h1>
+
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box8"></div>
+        <div class="box9"></div>
+        <div class="box10"></div>
+        <div class="box11"></div>
+        <div class="box12"></div>
+        <div class="box13"></div>
+        <div class="box14"></div>
+        <div class="box15"></div>
+        <div class="box16"></div>
+        <div class="box17"></div>
+        <div class="box18"></div>
+        <div class="box19"></div>
+        <div class="box20"></div>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css object fill and fit </title>
+    <style>
+        .contain {
+            height: 200px;
+            width: 200px;
+            background-color: rgb(154, 233, 154);
+        }
+
+        img {
+            height: 200px;
+            width: 200px;
+            /* cover for cutting */
+            /* object-fit: contain; */
+            object-fit: cover;
+            /* object-fit: fill; */
+            /* object-fit: scale-down; */
+            object-position: top left;
+        }
+        .bg{
+            height: 400px;
+            width: 400px;
+            background-color: rebeccapurple;
+            border: 5px solid royalblue;
+            background-image: url(/web/media/images\ \(5\).jpeg);
+            background-repeat: no-repeat;
+            background-position:center bottom;
+            background-size:contain ;
+            filter: invert(1);
+            filter: contrast();
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contain">
+        <img src="/web/media/images (7).jpeg" alt="image not found">
+    </div>
+    <div class="bg">
+        hello our viewer now this is background img content
+    </div>
+</body>
+
+</html>
