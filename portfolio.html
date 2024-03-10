@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfoli website</title>
+    <style>
+      ul {
+        font-size: 16px;
+        font-family: sans-serif;
+        background-color: hsl(69, 100%, 80%);
+        border-radius: 13px;
+        text-align: center;
+        display: grid;
+      }
+      li:hover {
+        background-color: #e4e400;
+
+        border-radius: 13px;
+      }
+      li {
+        list-style: none;
+        list-style-position: inside;
+        padding: 10px;
+
+        grid-template-columns: 100px 100px 100px 100px;
+        grid-area: 100;
+        /* display: flex;
+    flex-direction: row; */
+      }
+
+      body {
+        background-color: #7fd45d;
+      }
+      td {
+        border: 2px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Contact</li>
+          <li>Download</li>
+          <li>Help</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <table style="border: 2px solid; height: 150px; width: 150px">
+          <thead>
+            <tr>
+              <th></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <script>
+      console.log("hello portfolio");
+      let dark = prompt("enter bgcolor");
+      const bgcolor = (dark) => {
+        document.body.style.background = "dark";
+      };
+      let t = document.body.children[1].firstElementChild.firstElementChild;
+    //   console.log(b.rows);
+    //   console.log(b.cells);
+    //   console.log(b.caption);
+    //   console.log(b.thead);
+    //   console.log(b.tbody);
+
+    
+    </script>
+  </body>
+</html>

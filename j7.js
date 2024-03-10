@@ -1,0 +1,1 @@
+alert("kitida navyane tula aathvave");
