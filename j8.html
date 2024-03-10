@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object parents child slibling</title>
+
+<style>
+    .box{
+        height: 40px;
+        width: 40px;
+        border: 6px solid rebeccapurple;
+        border-top: 6px solid rgb(250, 250, 250);
+        border-left: white 6px solid;
+        margin: 29px;
+        border-radius: 25px;
+        animation: 1s linear infinite gol;
+    }
+    @keyframes gol {
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    .contain{
+        background-color: aquamarine;
+    }
+    table{
+        height: 300px;
+        width: 300px;
+        border: solid 3px black;
+    }
+    td{
+        border: 2px solid black;
+    }
+    th{
+        height: 45px;
+        border: 2px solid black;
+    }
+</style></head>
+<body>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+    </div>
+    <table>
+        <thead>
+            <tr><th></th>
+            <td></td>
+            
+            <td></td></tr>
+        </thead>
+        <tbody>
+            
+            <tr><td></td>
+                <td></td>
+                <td></td></tr>
+                
+            <tr><td></td>
+                <td></td>
+                <td></td></tr>
+                
+            <tr><td></td>
+                <td></td>
+                <td></td></tr>
+            <tr><td></td>
+            <td></td>
+            <td></td></tr>
+        </tbody>
+    </table>
+    <script src="j8.js"></script>
+</body>
+</html>
