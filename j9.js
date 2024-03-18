@@ -30,7 +30,7 @@ if(zoo){
 document.write(a);
 }
 else {
-    document.write("please alow me to display")
+    document.write("please allow me to display")
 }
 
 

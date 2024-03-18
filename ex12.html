@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      .container {
+        height: 100vh;
+        width: 100vw;
+        background-image: linear-gradient(45deg, #1100ff, #21ff21);
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+      }
+      #clock {
+        /* border: 2px solid rgba(248, 1, 1, 0); */
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        text-align: center;
+        height: 100px;
+        background-color: #44ff6354;
+        align-items: center;
+        border-radius: 20px;
+        z-index: 2;
+        position: absolute;
+        backdrop-filter: blur(30px);
+        font-size: 30px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;       
+mix-blend-mode:luminosity;
+      }
+      .container::before {
+        content: "";
+        background-color: blue;
+        height: 150px;
+        width: 150px;
+        border-radius: 75px;
+  transform: translate(-100px);
+  z-index: 1;
+      }
+      .container::after {
+        content: "";
+        border-radius: 75px;
+        background-color: rgb(41, 41, 88);
+        height: 150px;
+        width: 150px;
+        transform: translate(100px);
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div id="clock">
+        <div id="hr">00</div>
+        <div id="min">00</div>
+        <div id="sec">00</div>
+      </div>
+    </div>
+
+    <script>
+      let co = document.getElementById("clock");
+      let hr = document.getElementById("hr");
+      let min = document.getElementById("min");
+      let sec = document.getElementById("sec");
+      
+      setInterval(() => {
+        let ct = new Date();
+        hr.innerHTML = ct.getHours();
+        min.innerHTML = ct.getMinutes();
+        sec.innerHTML = ct.getSeconds();
+      }, 1000);
+    </script>
+  </body>
+</html>

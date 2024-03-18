@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            color: white;
+        }
+        .container{
+            background-color: yellow;
+        background-image: linear-gradient(23deg,#a34232,#432243);
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        background-size: cover;}
+        .circle{
+            border-radius: 200px;
+            height: 400px;
+            width: 400px;
+            background: yellow;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #clock{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 100px;
+            row-gap: 10px;
+background: #a52d2d;
+transform: rotate(360deg);
+        }
+        #sec{
+          height: 10px ;
+          background-color: black;
+          width: 100px ;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle">
+        <div id="clock">
+          <div id="hr"></div>
+          <div id="min"></div>
+          <div id="sec"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      setInterval(() => {
+        let currenttime = new Date();
+        let go = document.getElementById("clock");
+        let hr= document.getElementById("hr");
+        let sec= document.getElementById("sec");
+        hr.innerHTML = currenttime.getHours();
+        min.innerHTML = currenttime.getMinutes();
+        sec.innerHTML = currenttime.getSeconds();
+
+      }, 1000);
+    </script>
+  </body>
+</html>
